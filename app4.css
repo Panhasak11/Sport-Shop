@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(0, 177, 12);
+    z-index: 100;
+    position: relative;
+}
+.page-head{
+    width: 100%;
+    height: 100%;
+    /* background-color: black; */
+    display: flex;
+}
+.page-logo,.box-search{
+    width: 20%;
+    height: 100%;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.page-logo img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+.box-name{
+    color: black;
+}
+.page-menu{
+    width: 60%;
+    height: 100%;
+    /* background-color: chartreuse; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-menu ul li {
+    list-style: none;
+    display: inline-block;
+}
+.page-menu ul li a{
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 20px;
+    /* padding: 25px 15px; */
+    color: rgb(0, 0, 0);
+    /* transition: all 0.5s; */
+}
+.page-menu ul li a:hover{
+   color: rgb(0, 177, 12);
+   /* transition: all 0.5s; */
+}
+.page-menu ul li:hover .s_menu{
+    display: block;
+    width: 250px;
+    height: 300px;
+    /* display: flex; */
+    justify-content: center;
+    margin-left: 25px;
+    margin-top: 5px;
+    padding-top: 30px;
+    /* padding-left: 0; */
+    
+}
+.s_menu{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.762);
+    border-left: 3px solid rgb(0, 177, 12);
+    display: none;
+    color: white;
+    line-height: 30px;
+    /* padding-left: 10px; */
+}
+.s_menu ul li a{
+    color: white;
+}
+/* ===================================== */
+.box-search input{
+    width: 200px;
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(0, 177, 12);
+}
+.box-search button{
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: rgb(47, 113, 255);
+    border: none;
+    color: white;
+}
+.content{
+    width: 90%;
+    height: 500px;
+    /* background-color:rgb(47, 113, 255); */
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px;
+}
+.box-card{
+    width: 100%;
+    height: 320px;
+    /* background-color: orange; */
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.card{
+    width: 300px;
+    height: 400px;
+    background-color: rgb(255, 0, 0);
+    display: flex;
+    justify-content: space-evenly;
+    box-shadow: 10px 10px 10px gray;
+}
+.thumnail{
+    width: 100%;
+    height: 55%;
+    /* background-color: rgb(138, 0, 0); */
+    display: flex;
+}
+.thumnail a{
+    width: 100%;
+    height: 100%;
+    /* background-color: blue; */
+    overflow: hidden;
+}
+.thumnail a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.thumnail a:hover img{
+    transition: all 0.7s;
+    transform: scale(1.1);
+}
+.detail{
+    width: 100%;
+    height: 30%;
+    background-color: rgb(192, 218, 255);
+    line-height: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-size: 18px;
+}
+.detail p{
+    font-size: 15px;
+    margin-top: 20px;
+}
+.button{
+    width: 100%;
+    height: 15%;
+    background-color: rgb(192, 218, 255);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.button button{
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgb(28, 89, 255);
+    color: white;
+    font-size: 15px;
+    border: none;
+}
+footer{
+    width: 100%;
+    height: 400px;
+    background-color: rgb(0, 0, 0);
+    margin-top: 900px;
+    display: flex;
+}
+.foot-detail{
+    width: 30%;
+    height: 100%;
+    /* background-color: #1eff00; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.other{
+    width: 30%;
+    height: 100%;
+    /* background-color: #1eff00; */
+}
+.map{
+    width: 40%;
+    height: 100%;
+    /* background-color: darkblue; */
+    padding: 20px;
+}
+.f-lo-name{
+    width: 100%;
+    height: 35%;
+    background-color: black;
+    padding: 10px;
+    display: flex;
+}
+.foot-shop-logo{
+    width: 30%;
+    height: 100%;
+    background-color: brown;
+}
+.foot-shop-logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.foot-shop-name{
+    width: 70%;
+    height: 100%;
+    /* background-color: #ff12e7; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+.icon{
+    width: 100%;
+    height: 60%;
+    /* background-color: #5c5c5c; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.dev-by{
+    width: 100%;
+    height: 30%;
+    /* background-color: tomato; */
+    padding: 10px;
+    color: white;
+}
